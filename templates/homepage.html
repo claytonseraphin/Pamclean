@@ -1,0 +1,90 @@
+{% extends 'main_layout.html' %}
+{% load static %}
+{% block content %}
+
+<div class="board">
+	<img class="mySlides" src="{% static 'img/billboard-01.jpg' %}" alt="b1">
+	<img class="mySlides" src="{% static 'img/billboard-02.jpg' %}" alt="b2">
+	<img class="mySlides" src="{% static 'img/billboard-03.jpg' %}" alt="b3">
+	<div class="side-content col-md-4 text-center">
+		<h1 class="intro"> Consider this as a Heading. </h1>
+		<p class="intro-p">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.<br><br><br> 
+		Call Us: <h3>(404)682-1926</h3>
+		</p>
+	</div>	
+</div>
+						
+<div class="misyon">
+	<div class="container-misyon">
+		<div class="row">
+			<div  class="cell-1 col-12">
+				<div class="misyon-props">
+					<div class="misyon-prop">
+						<div id="bg" class="icon" style="background-image: url('{% static "img/icon-certified.png" %}')";></div>
+						<div class="title-misyon"> Certified Landscping Professionals </div>
+					</div>
+					<div class="misyon-prop">
+						<div class="icon" style="background-image: url('{% static "img/icon-guarantee.png" %}')";></div>
+						<div class="title-misyon"> Customer Satisfaction Guarantee </div>
+					</div>
+					<div class="misyon-prop">
+						<div class="icon" style="background-image: url('{% static "img/icon-staff.png" %}')";></div>
+						<div class="title-misyon"> Uniformed, knowledgeable staff </div>
+					</div>
+					<div class="misyon-prop">
+						<div class="icon" style="background-image: url('{% static "img/icon-prices.png" %}')";></div>
+						<div class="title-misyon"> Competitive prices </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="dedication-props">
+	<div class="dedication-prop">
+		<div class="row">
+			<h2> Over a Decade of Dedication Throughout South Atlanta </h2>
+			<p> Weaver Landscape was born out of a knack for creating beautiful landscaping.  With determination and passion, the company has serviced thousands of homes and worked closely with homeowners associations, commercial, and residential clientele throughout the Atlanta metropolitan area. </p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row row-flex service-list">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" class="service colour-1"> 
+					<span class="icon" style="background-image: url('{% static "img/icon-building.png" %}')";></span>
+					<span class="title"> Commercial </span>
+					<span class="description"> Our commercial division works directly with property management companies, developers, and Home Owner Associations to formulate customized installation and maintenance programs.
+					</span>
+					<span class="button">Learn more</span>
+				</a>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" class="service colour-2"> 
+					<span class="icon" style="background-image: url('{% static "img/icon-house.png" %}')";></span>
+					<span class="title"> Residential </span>
+					<span class="description"> Our commercial division works directly with property management companies, developers, and Home Owner Associations to formulate customized installation and maintenance programs.
+					</span>
+					<span class="button">Learn more</span>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" class="service colour-3"> 
+					<span class="icon" style="background-image: url('{% static "img/icon-price-tag.png" %}')";></span>
+					<span class="title"> Pricing </span>
+					<span class="description"> Our commercial division works directly with property management companies, developers, and Home Owner Associations to formulate customized installation and maintenance programs.
+					</span>
+					<span class="button">Learn more</span>
+				</a>
+			</div>
+		</div>	
+	</div>
+	
+</div>
+
+
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+{% endblock %}
+

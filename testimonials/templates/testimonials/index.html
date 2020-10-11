@@ -1,0 +1,36 @@
+{% extends 'main_layout.html' %}
+
+	{% block content %}
+		<section class="banner-bg">
+			<h1 class="titulo"> P A M C L E A N R E V I E W S </h1>
+			<h4 class="lyen_form"> Ou vle temwanye tou pou eksperyans ou fè avèk Pamclean? <a href="{% url 'testimonials:testimonial_create' %}">Klike la.</a></h4>
+		</section>
+		{% if testimonials_list %}
+			<ul>
+				{% for testimonial in testimonials_list %}
+					<ul class="container_testimonial col-md-8 offset-md-2">
+						<div class="container_title">
+							<a href="{% url 'testimonials:testimonial_detail' slug=testimonial.slug %}">{{testimonial.title}}</a>
+						</div>
+						<div class="rating rating_testimonial">
+							★
+							★
+							★
+							★
+							★
+						</div>
+						<div class="testimonial_content">
+							<p class="preview_testimonial">{{testimonial.content |truncatewords_html:50|safe|linebreaksbr}}
+							</p>
+							<a href="{% url 'testimonials:testimonial_detail' slug=testimonial.slug %}">Read More</a> 
+						</div>
+						<p class="client"> {{testimonial.client}} </p>
+					</ul>
+
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p> No Testimonials displayed yet.</p>
+		{% endif %}
+
+	{% endblock %}

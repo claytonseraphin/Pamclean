@@ -1,0 +1,134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- {{ form.media }}  REMOVE THE COMMENT TO ENABLE FLORALA EDITOR-->
+        <title>P A M C L E A N</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/simple-lightbox.min.css' %}">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript, JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="{% static 'js/simple-lightbox.min.js' %}"></script>
+
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f71a66e4ec.js" crossorigin="anonymous"></script>
+        <!--  MAster CSS Files -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <!-- JS file -->
+        <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    </head>
+    <body>
+        <header>
+            <section id="header" class="sticky">
+                <div class="row middle">
+                    <div class="cell-1 col-3 col-desktop-2">
+                        <a href="/">
+                            <img class="primary-logo" src="{% static 'img/logo.png' %}" id="logo"/>
+                        </a>
+                    </div>
+                    <div class="cell-2 col-6 col-desktop-7">
+                        <nav id="header-navigation" class="menu cemah-menu cemah-primary-menu dropdown-bubble"><div id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="{% url 'products:index' %}">Pwodui</a></div>
+                            <div id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="/gallery">Galri</a></div>
+                            <div id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="{% url 'testimonials:index' %}">Temwanyaj</a></div>
+                            <div id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-33"><a href="{% url 'blogs:index' %}">Blog</a> </div>
+                            <div id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="/">About</a></div>
+                            <div id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36"><a href="/">Kontak</a></div>
+                        </nav>          
+                    </div>
+
+                    <div class="cell-3 col-3">
+                        <div class="phone-wrap">
+                            <i class="fa fa-phone icono" aria-hidden="true"></i>
+                            <a href="tel:4046821926" target="_top" class="primary-phone-1 phone">(404) 682-1926</a>             </div>
+                        <div class="email-wrap">
+                            <i class="fa fa-envelope icono" aria-hidden="true"></i>
+                            <a href="mailto:info@weaverlandscape.com">Send us an Email</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </header>
+
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer class="testimonials">
+    
+            <div class="container">
+                <div class="row middle">
+                    <div class="cell-1 col-6 col-small-tablet-12">
+                        <h3> 
+                            Ou Prè Pou Jwenn
+                            <br>
+                            Pwodui Menaje
+                            <br>
+                            Ke kay la Bezwen an?
+                        </h3>
+                        <div class="phone-wrap">
+                            "Call Us:"
+                            <a href="tel://+16318797051" target="_top" class="primary-phone-1 phone"> (631) 819-2595</a>
+                        </div>
+                    </div>
+                    <div class="cell-1 col-6 col-small-tablet-12">
+                        {% block testimonials %}
+
+                        {% endblock %}
+                        <div class="post-list archive list">
+                            <article class="archive extensions post-87 testimonial type-testimonial status-publish hentry">
+                                <h3>
+                                    <a href="#">Always On Schedule</a>
+                                </h3>
+                                <div class="rating">
+                                    ★
+                                    ★
+                                    ★
+                                    ★
+                                    ★
+                                </div>
+                                <div class="excerpt">
+                                    <p>  
+                                        "They had great ideas for my landscaping and answered all of my questions. The crew was very professional and courteous. They kept the work site clean, kept me posted on how the job was progressing, and did an awesome job."
+                                        <a class="read-more" href="#"></a>
+                                    </p>
+                                </div>
+                                <div class="byline">
+                                    
+                                    Tisha Wright 
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                  <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0//js/froala_editor.pkgd.min.js"></script>
+
+          <!-- Initialize the editor. -->
+    <script>
+        new FroalaEditor('#edit', {
+        // Set the image upload URL.
+        imageUploadURL: '/upload_image',
+        imageUploadParams: {
+            id: 'my_editor'
+        },
+        });
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+{% extends 'main_layout.html' %}
+
+{% block content %}
+
+	<div class="blog_list">
+		{% if bloglists %}
+			<ul>
+				{% for bloglist in bloglists%}
+					<div class="col-md-8">
+						<div class="card md-4">
+							<img class="card-img-top" src="{{bloglist.cover.url}}" alt="cover image cap">
+							<div class="card-body">
+								<h2 class="card-title">{{bloglist.title}}</h2>
+								<p class="card-text">{{bloglist.body |truncatewords_html:100|safe|linebreaksbr}}</p>
+								<a href="{% url 'blogs:blog_details' slug=bloglist.slug %}" class="btn btn-primary" title=""> Kontinye Li Rès Atik La. &rarr;</a>
+							</div>
+							<div class="card-footer text-muted">
+								<small>Posted on {{bloglist.created_at}}</small>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</ul>
+			{% else %}
+				<h3> No Post Has Been Made On This Blog Yet.</h3>
+		{% endif%}
+	</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'main_layout.html' %}
+
+{% block content %}
+
+	<div class="product-list">
+		{% if products_list %}
+			{% for product in products_list %}
+				<div class="well">
+					<div class="media" style="margin-top:20px; margin-bottom:20px;">
+						<a href="{% url 'products:product_detail' slug=product.slug %}" title="" class="pull-left">
+							<img class="media-object" src="{{product.photo.url}}" alt="photo" style="width:150px;height:150px">
+						</a>
+						<div class="media-body" style="margin-left:10px;">
+							<h4 class="media-heading">{{product.name}}</h4>
+							<p>{{product.detail |truncatewords_html:50|safe|linebreaksbr}}</p>
+							Common Tags:
+							{% if common_tags %}
+								{% for mt in common_tags %}
+									<a href="{% url 'products:tagged' slug=mt.slug %}" class="badge badge-success">{{mt}}</a>
+								{% endfor %}
+							{% else %}
+								<h3>No Common Tags For This Product.</h3>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		{% else %}
+			<p> There are no products in the library. </p>
+		{% endif %}
+	</div>
+
+{% endblock %}

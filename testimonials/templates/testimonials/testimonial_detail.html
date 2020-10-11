@@ -1,0 +1,32 @@
+{% extends 'main_layout.html' %}
+
+	{% block content %}
+		<div class="detail-container">
+			<section class="banner-bg">
+				<h1 class="titulo"> {{testimonials.title}} </h1>
+			</section>
+			<div class="justify-content-center testimonial-content">
+				<div class="rating">
+					★
+					★
+					★
+					★
+					★
+			</div>
+				<p class="full_testimonial"> {{testimonials.content|safe|linebreaksbr}} </p> <br>
+				<p class="client"> {{testimonials.client}} </p>
+			</div>
+		</div>
+		<section class="vanpre">
+			{% if testimonials.get_previous_by_created_at %}
+				<a href="{% url 'testimonials:testimonial_detail' testimonials.get_previous_by_created_at.slug %}" class="btn btn-light previous"> <i class="fa fa-chevron-left" aria-hidden="true"></i>  prev </a>
+			{% endif %}
+
+			{% if testimonials.get_next_by_created_at %}
+				<a href="{% url 'testimonials:testimonial_detail' testimonials.get_next_by_created_at.slug %}" class="btn btn-light next"> next  <i class="fa fa-chevron-right" aria-hidden="true"></i> </a>
+			{% endif %}
+
+			<a href="{% url 'testimonials:index' %}" class="btn btn-light all_reviews">  <i class="fa fa-list" aria-hidden="true"></i> all reviews </a>
+		</section>
+		
+{% endblock %}

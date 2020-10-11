@@ -1,0 +1,524 @@
+
+/* ************************ Index Home ***************************** */
+
+img#logo{
+	height:106px;
+	width:125px;
+}
+
+/* ************************ HEADER ***************************** */
+section#header .menu {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.cemah-primary-menu {
+    display: flex;
+    width: 100%;
+}
+
+.row.middle {
+	-webkit-box-align: center;
+    align-items: center;
+}
+
+.row {
+	flex-wrap: wrap;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+    margin-left: 0;
+}
+
+[class*=" col-"], [class^=col-] {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+section#header .cell-2 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sticky{
+	background-color: #f8f8f8;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-left: 0;
+}
+
+.cemah-primary-menu>.menu-item {
+    position: relative;
+    line-height: 18px;
+}
+
+section#header .menu>.menu-item>a {
+    color: #222624;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-weight: 700;
+}
+
+.cemah-primary-menu>.menu-item>a {
+    padding: 13px 10px 13px 10px;
+    font-size: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.cemah-primary-menu a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.cemah-primary-menu a:hover{
+	background-color: #244831;
+	color: #fff !important;
+	border-radius: 10px;
+}
+a {
+    color: #244831;
+    outline: 0;
+}
+
+section#header .phone-wrap {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+section#header .cell-3 {
+    text-align: right;
+}
+
+section#header .phone-wrap .icono {
+    margin-right: .25rem;
+    top: 2px;
+    position: relative;
+    color: #90994D;
+}
+
+section#header .email-wrap {
+    margin-top: .25rem;
+    font-size: .85em;
+    display: block;
+}
+
+section#header .email-wrap a, section#header .phone-wrap a {
+    
+    color: #244831;
+    outline: 0;
+}
+
+section#header .email-wrap .icono {
+    position: relative;
+    top: 1px;
+    margin-right: .125rem;
+    color: #90994D;
+
+}
+/* ************************ Billboard ***************************** */
+
+.board{
+	width: 100%;
+	float: right !important;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.mySlides{
+	width: 100%;
+	margin-left:0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container{
+	max-width: 100%;
+}
+
+.board .side-content{
+	position: absolute;
+	bottom: -30px;
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1;
+	height: 100%;
+	padding; 20px;
+}
+
+.board .intro{
+	padding-top: 100px;
+}
+
+p .intro-p{
+	padding top: 20px;
+}
+
+/* ************************ Misyon ***************************** */
+.misyon{
+background-color: #eee;
+padding-top: .5rem;
+padding-bottom: .5rem;
+text-align: center;
+}
+
+.container-misyon{
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 25px;
+	padding-left:25px;
+	max-width: 1250px;
+}
+.misyon-props{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 85px;
+}
+
+
+.misyon-props .misyon-prop .icon{
+	width: 60px;
+	min-width: 60px;
+	height: 60px;
+	margin-right: .5rem;
+	border-radius: 20px;
+	background-color: #fff;
+	border: 2px solid #cbd962;
+	background-size: 50px 50px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	float: left;
+}
+
+
+.dedication-prop .row{
+	text-align: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:50px;
+	padding-right: 200px;
+	padding-left:200px;
+	max-width: 1250px;
+}
+
+/* ************************ Misyon ***************************** */
+/* display this row with flex and use wrap (= respect columns' widths) */
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:50px;
+}
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.service{
+	height: 100%;
+	padding: 20px 20px 10px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 1rem 3.5rem;
+    text-align: center;
+    background-color: #CBD962;
+    border-radius: 6px;
+    text-decoration: none !important;
+}
+
+.colour-1{
+	background: #483C46;
+ 	color: #fff;
+}
+
+.colour-2{
+	background: #3C6E71;
+}
+
+.colour-3{
+	background: #70AE6E;
+}
+
+.container .title{
+	margin-top: .75rem;
+	display: block;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #222624;
+}
+
+.container .description{
+	margin-top: .5rem;
+	display: block;
+	color: rgba(36,72,49,.8);
+}
+
+.container .icon{
+	display: inline-block;
+    border: 6px solid #FFF;
+    background-color: #244831;
+    background-size: 80px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    border-radius: 40px;
+    position: relative;
+    perspective: 1000px;
+    backface-visibility: visible;
+    transition: all .3s ease-in;
+}
+
+/* ************************ Testimonial Section ***************************** */
+.testimonials {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #222624;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background: url('/static/img/background-testimonials.jpg');
+    color: rgba(255,255,255,.85);
+}
+
+section.testimonials article.testimonial a {
+    color: #FFF;
+}
+
+.rating {
+    font-family: Arial,sans-serif;
+    letter-spacing: -2px;
+    color: orange;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-top: -.25rem;
+    margin-bottom: .75rem;
+}
+
+article.testimonial .byline{
+	text-align: right !important;
+	margin-top: 1rem;
+    font-weight: 700;
+}
+
+article.testimonial .byline::before{
+	content: ' - ';
+}
+/* ************************ Products ***************************** */
+
+
+.product-list{
+	margin-top: 30px;
+}
+.product-list .part-1{
+	background-color: #FAFAFA;
+}
+
+
+
+.product-list .product-name{
+	margin-top: 60px;
+	margin-left: 20px;
+	color: #000;
+}
+
+.product-list .product-detail-short{
+	color: #808080;
+	text-align: justify;
+	margin-top: 20px;
+}
+.pic{
+	max-height: 100%;
+	max-width: 50%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/* ************************ Products DETAIL ***************************** */
+
+.product-detail{
+	margin-top: 10px;
+	width: 60% !important;
+	text-align: center;
+	margin: auto;
+}
+#space{
+	
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    color: #4a4a4a;
+    display: inline-block !important;
+    padding: 1.25rem;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 250px;
+}
+
+#disqus_thread{
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+}
+
+.comment-policy {
+    margin-bottom: 25px;
+    color: #2a2e2e;
+    background-color: #ebeef2;
+    font-size: 16px;
+    height: 100%;
+    display: inline-block;
+    line-height: 1.45em;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+
+i .icon-policy{
+	font-size: 25px;
+	font-weight: 4200;
+	line-height: 1;
+	float:right;
+	margin-left: 20px;
+}
+
+/* ************************ Testimonial Create ***************************** */
+.form-container{
+	width: 60%;
+	height: 100%;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+.banner-bg{
+	background-color: #ddd;
+    background: url('/static/img/background-page-header.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    padding-bottom: 4.5rem;
+}
+
+/* ************************ Testimonial Detail ***************************** */
+.titulo, .lyen_form{
+	color: white;
+	text-align: center;
+	font-family: Spectral,'Times New Roman',serif;
+}
+
+.lyen_form a, a:hover{
+	color: #fff;
+
+}
+.testimonial-content{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:50px;
+}
+
+.testimonial-content .client{
+	text-align: right !important;
+	margin-top: 1rem;
+    font-weight: 700;
+}
+
+.testimonial-content .client::before{
+	content: ' - ';
+}
+
+.vanpre{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.previous{
+	float: left;
+}
+
+.next{
+	float: right;
+}
+
+.all_reviews{
+	text-align: center;
+	margin-left: 200px;
+}
+
+.all_reviews, a.button.all_reviews, .next, .previous{
+	color: #222624;
+	border: 2px solid #222;
+	text-transform: uppercase;
+}
+.full_testimonial::before, .full_testimonial::after{
+	content: '"';
+}
+/* ************************ Testimonial Index ***************************** */
+
+.container_testimonial{
+	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rating_testimonial{
+	margin-top: 20px;
+}
+
+.container_testimonial .client{
+	text-align: right !important;
+	margin-top: 1rem;
+    font-weight: 700;
+}
+
+.container_testimonial .client::before{
+	content: ' - ';
+}
+.testimonial_content{
+	display: inline;
+}
+.preview_testimonial::before, .preview_testimonial::after{
+	content: '"';
+}
+
+.container_title a{
+	color: #86970b !important;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-decoration: none;
+    
+}
+
+/* ************************ Blog Index ***************************** */
+.blog_list{
+	padding-top: 56px;
+}

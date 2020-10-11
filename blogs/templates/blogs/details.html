@@ -1,0 +1,49 @@
+{% extends 'main_layout.html' %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-lg-8">
+			<h1 class="mt-4">{{blogs.title}}</h1>
+			<hr>
+			<p>Posted on {{blogs.created_at}} </p>
+			<hr>
+			<img src="{{blogs.cover.url}}" alt="cover" class="img-fluid rounded">
+			<hr>
+			<p class="lead">{{blogs.body}}</p>
+
+			<hr>
+			<!-- DISQUS -->
+					<div class="box">
+			<div id="comment-policy" class="comment-policy publisher-anchor-color">
+				<div class="content">
+					<p class="title">PamClean Comment Policy <i aria-hidden="true" class="far fa-comments fa-lg icon-policy icon-chat-bubble"> </i></p>
+					<p>Comments must be respectful, constructive, and relevant to the topic of the guide. No external links or advertisements.</p>
+				</div>
+			</div>
+			<div id="disqus_thread">
+				<script>
+
+					/**
+					*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+					*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+				
+					var disqus_config = function () {
+					this.page.url = "http://127.0.0.1:8000/products/detail/{{products.slug}}/";  // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = "{{products.slug}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					};
+				
+					(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://pamclean.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        	</div>
+        </div>               
+	</div
+	<script id="dsq-count-scr" src="//pamclean.disqus.com/count.js" async></script>
+		</div>
+	</div>
+{% endblock %}
